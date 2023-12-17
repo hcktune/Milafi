@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="auth-section">
-            <button id="log_in">Log in</button>
-            <button id="sign_up">Sign up</button>
-        </div>
-        <img src="img/logo.png" alt="Milafi_img">
-        <div class="columns">
-            <!-- CNE -->
-            <label for="cne">CNE:</label>
-            <input type="text">
-            <!-- Password -->
-            <label for="Password">Password:</label>
-            <input type="password">
-        </div>
-        
-    </div>
+    <main class="container">
+        <nav class="auth">
+            <a href="/login.html">Log in</a>
+            <a href="/Sign up">Sign up</a>
+        </nav>
+        <section class="milafi-img">
+            <img src="img/logo.png" alt="milafi_img">
+        </section>
+        <section class="login_form">
+            <form action="" method="get">
+                <label for="cne">CNE :</label>
+                <input type="text" required>
+                <label for="cne">Password :</label>
+                <input type="password" minlength="8" required>
+                <div class="center">
+                    <input type="submit" value="Sign in">
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
